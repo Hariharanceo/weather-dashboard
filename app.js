@@ -163,7 +163,7 @@ $(document).ready(function() {
       });
   
       // Determine whether to use the daytime or nighttime version of the icon
-      if (currentHour >= 06 && currentHour < 18) {
+      if (currentHour >= 6 && currentHour < 18) {
         return icons[index].day;
   
       } else {
@@ -263,7 +263,7 @@ $(document).ready(function() {
   
         fiveDayForecast.push(forecastData[38]);
   
-      } else if (firstResult.hour <= 09 && firstResult.hour >= 12) {
+      } else if (firstResult.hour <= 9 && firstResult.hour >= 12) {
         for (var i = 9; i < forecastData.length; i +=8) {
           fiveDayForecast.push(forecastData[i]);
         }
